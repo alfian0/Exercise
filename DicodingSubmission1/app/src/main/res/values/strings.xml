@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">DicodingSubmission1</string>
+    <string name="news_title">News Title</string>
+    <string name="news_description">News Description</string>
+    <string name="banner">banner</string>
+    <string name="about">About</string>
+    <string name="name">Muhammad Alfiansyah</string>
+    <string name="profile">Profile</string>
+    <string name="share">share</string>
+
+    <string-array name="data_title">
+        <item>Roadside Tesla Semi fire where temperatures reached 1000 degrees draws in NTSB investigative team</item>
+        <item>Get in on the ground floor with Teslas humanoid by pretending to be one for pay</item>
+        <item>Get in on the ground floor with Teslas humanoid by pretending to be one for pay | TechCrunch</item>
+        <item>Top 10 most traded ASX shares and US stocks in July</item>
+        <item>Chinas robot makers chase Tesla to deliver humanoid workers</item>
+        <item>Chinas robot makers chase Tesla to deliver humanoid workers</item>
+        <item>Chinas robot makers chase Tesla to deliver humanoid workers</item>
+        <item>Korean EV owners angered by Seoul govt plans to ban fully-charged EVs from basement parking after fire</item>
+        <item>Lets all just drive modded 90s Honda civics: Expert shares the real reason all modern cars are junk</item>
+        <item>Why Did Tesla Stock Crash Today?</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>A crash and large fire along a California freeway involving an electric Tesla Semi has drawn the attention of federal safety investigators. The U.S. National Transportation Safety Board said Thursday its sending a team of investigators from the Office of Hig…</item>
+        <item>In 2021, Elon Musk unveiled Tesla Bot, a prototype for a humanoid robot that would eventually go by the name Optimus. Famously, there was no actual robot present, but rather a person in a suit pretending to be one. Now you can join in the action, while getting…</item>
+        <item>Tesla is hiring individuals standing between 57 and 511 to carry up to 30 pounds for seven hours a day to train its Optimus robot.</item>
+        <item>The most traded ASX share was a defence software and hardware development company. The post Top 10 most traded ASX shares and US stocks in July appeared first on The Motley Fool Australia.</item>
+        <item>China dominates the market for electric vehicles. Now its chasing Tesla in the race to build battery-powered humanoids expected to replace human workers building EVs on assembly lines.</item>
+        <item>Chinas robot makers chase Tesla to deliver humanoid workers</item>
+        <item>Empty</item>
+        <item>The much-publicized August 1 electric vehicle fire in Incheon, South Korea in which a Mercedes-Benz EQE spontaneously combusted and torched around 140 nearby cars has resulted in an immediate reaction from the Seoul Metropolitan Government. The neighboring…</item>
+        <item>A car expert recently doubled down on his claim that new cars hitting showroom floors are absolutely garbage in a follow-up video after stating that he will have to throw away his new Ford Bronco in five years. TikToker and car enthusiast Nav Gill (@navsg…</item>
+        <item>I saw a headline pop up somewhere about Tesla stock crashing today. I dont watch the stock closely or check it often. Once in a while, I take a peek to see whats been going on. But when I see a headline like that, it catches my attention. I googled … [con…</item>
+    </string-array>
+
+    <string-array name="data_image">
+        <item>https://biztoc.com/cdn/800/og.png</item>
+        <item>https://biztoc.com/cdn/800/og.png</item>
+        <item>https://techcrunch.com/wp-content/uploads/2024/08/tesla-bot-in-brief.jpg?resize=1200,665</item>
+        <item>https://www.fool.com.au/wp-content/uploads/2021/09/stocks-boy-16_9-1200x675.jpg</item>
+        <item>https://biztoc.com/cdn/800/og.png</item>
+        <item>https://i-invdn-com.investing.com/news/moved_LYNXMPEI0P13A_L.jpg</item>
+        <item>Empty</item>
+        <item>https://paultan.org/image/2024/08/South-Korea-Incheon-EV-fire-1-1200x689.jpg</item>
+        <item>https://uploads.dailydot.com/2024/08/Junk-Cars.jpg?auto=compress&amp;fm=pjpg</item>
+        <item>https://cleantechnica.com/wp-content/uploads/2024/08/Tesla-stock-price-graph.png</item>
+    </string-array>
+</resources>

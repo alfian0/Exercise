@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DicodingSubmission1" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.DicodingSubmission1" parent="Base.Theme.DicodingSubmission1" />
+
+    <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
+        <item name="android:windowSplashScreenBackground" tools:targetApi="s">@color/purple</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="s">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.DicodingSubmission1</item>
+    </style>
+</resources>
