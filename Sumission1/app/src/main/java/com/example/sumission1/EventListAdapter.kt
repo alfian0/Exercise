@@ -22,7 +22,7 @@ class EventListAdapter(
         holder.bind(event)
     }
 
-    inner class ViewHolder(val binding: ItemEventBinding): RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder(private val binding: ItemEventBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(event: ListEventsItem) {
             Glide.with(binding.root.context)
                 .load(event.mediaCover)

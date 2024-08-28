@@ -10,12 +10,9 @@ import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sumission1.EventListAdapter
-import com.example.sumission1.R
 import com.example.sumission1.data.response.ListEventsItem
 import com.example.sumission1.databinding.FragmentFinishedBinding
-import com.example.sumission1.databinding.FragmentUpcomingBinding
 import com.example.sumission1.ui.detail.DetailActivity
-import com.example.sumission1.ui.upcoming.UpcomingViewModel
 
 class FinishedFragment : Fragment() {
     private var binding: FragmentFinishedBinding? = null

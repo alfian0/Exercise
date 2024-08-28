@@ -2,7 +2,6 @@ package com.example.sumission1
 
 import com.example.sumission1.data.response.EventListResponse
 import com.example.sumission1.data.response.EventResponse
-import com.example.sumission1.data.response.ListEventsItem
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
