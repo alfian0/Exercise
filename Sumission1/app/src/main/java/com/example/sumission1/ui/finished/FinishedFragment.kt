@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sumission1.EventListAdapter
@@ -33,6 +34,10 @@ class FinishedFragment : Fragment() {
 
         viewModel.events.observe(viewLifecycleOwner) { events ->
             setEventData(events)
+        }
+
+        viewModel.errorMessage.observe(viewLifecycleOwner) { message ->
+            Toast.makeText(binding?.root?.context, message, Toast.LENGTH_LONG).show()
         }
 
         return binding?.root

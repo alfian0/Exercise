@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.HtmlCompat
@@ -32,6 +33,10 @@ class DetailActivity : AppCompatActivity() {
             showLoading(it)
         }
 
+        viewModel.errorMessage.observe(this) { message ->
+            Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+        }
+
         viewModel.event.observe(this) { event ->
             supportActionBar?.title = event.name
             Glide.with(this)
@@ -54,7 +59,6 @@ class DetailActivity : AppCompatActivity() {
             .load(event?.mediaCover)
             .into(binding.imgItemPhoto)
         binding.tvItemTitle.text = event?.name
-        binding.tvItemDescription.text = HtmlCompat.fromHtml(event?.description ?: "", HtmlCompat.FROM_HTML_MODE_LEGACY)
     }
 
     private fun showLoading(isLoading: Boolean) {

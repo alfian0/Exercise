@@ -6,9 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.sumission1.ApiConfig
 import com.example.sumission1.data.response.Event
-import com.example.sumission1.data.response.EventListResponse
 import com.example.sumission1.data.response.EventResponse
-import com.example.sumission1.data.response.ListEventsItem
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -19,6 +17,9 @@ class DetailViewModel: ViewModel() {
 
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> = _isLoading
+
+    private val _errorMessage = MutableLiveData<String>()
+    val errorMessage: LiveData<String> = _errorMessage
 
     fun getEvent(id: Int) {
         _isLoading.value = true
@@ -33,12 +34,14 @@ class DetailViewModel: ViewModel() {
                     _event.value = response.body()?.event
                 } else {
                     Log.e(TAG, "onFailure: ${response.message()}")
+                    _errorMessage.value = response.message()
                 }
             }
 
             override fun onFailure(call: Call<EventResponse>, t: Throwable) {
                 _isLoading.value = false
                 Log.e(TAG, "onFailure: ${t.message.toString()}")
+                _errorMessage.value = t.message.toString()
             }
         })
     }
