@@ -13,13 +13,10 @@ import com.example.networking.ReviewAdapter
 import com.example.networking.data.response.CustomerReviewsItem
 import com.example.networking.data.response.Restaurant
 import com.example.networking.databinding.ActivityMainBinding
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    companion object {
-        private const val TAG = "MainActivity"
-        private const val RESTAURANT_ID = "uewq1zg2zlskfw1e867"
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,6 +40,16 @@ class MainActivity : AppCompatActivity() {
         }
         mainViewModel.isLoading.observe(this) {
             showLoading(it)
+        }
+        mainViewModel.snackbarText.observe(this) {
+            it.getContentIfNotHandled()?.let { snackBarText ->
+                Snackbar.make(
+                    window.decorView.rootView,
+                    snackBarText,
+                    Snackbar.LENGTH_SHORT
+                ).show()
+            }
+//            Snackbar.make(window.decorView.rootView, it, Snackbar.LENGTH_SHORT).show()
         }
 
         binding.btnSend.setOnClickListener { view ->
