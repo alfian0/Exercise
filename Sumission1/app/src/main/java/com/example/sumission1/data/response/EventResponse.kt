@@ -4,20 +4,20 @@ import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
-data class EventListResponse(
-
-	@field:SerializedName("listEvents")
-	val listEvents: List<ListEventsItem>,
+data class EventResponse(
 
 	@field:SerializedName("error")
 	val error: Boolean,
 
 	@field:SerializedName("message")
-	val message: String
+	val message: String,
+
+	@field:SerializedName("event")
+	val event: Event
 )
 
 @Parcelize
-data class ListEventsItem(
+data class Event(
 
 	@field:SerializedName("summary")
 	val summary: String,

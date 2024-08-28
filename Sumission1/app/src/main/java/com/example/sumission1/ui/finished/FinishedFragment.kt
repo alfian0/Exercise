@@ -1,5 +1,6 @@
 package com.example.sumission1.ui.finished
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,6 +13,7 @@ import com.example.sumission1.R
 import com.example.sumission1.data.response.ListEventsItem
 import com.example.sumission1.databinding.FragmentFinishedBinding
 import com.example.sumission1.databinding.FragmentUpcomingBinding
+import com.example.sumission1.ui.detail.DetailActivity
 import com.example.sumission1.ui.upcoming.UpcomingViewModel
 
 class FinishedFragment : Fragment() {
@@ -37,7 +39,11 @@ class FinishedFragment : Fragment() {
     }
 
     private fun setEventData(events: List<ListEventsItem>) {
-        val adapter = EventListAdapter()
+        val adapter = EventListAdapter { event ->
+            val intent = Intent(activity, DetailActivity::class.java)
+            intent.putExtra(DetailActivity.EXTRA_EVENT, event)
+            startActivity(intent)
+        }
         adapter.submitList(events)
         binding?.recyclerView?.adapter = adapter
     }

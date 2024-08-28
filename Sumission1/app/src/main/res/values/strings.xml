@@ -5,4 +5,7 @@
     <string name="finished">Finished</string>
     <string name="event_name">Event Name</string>
     <string name="event_banner">Event Banner</string>
+    <string name="event_description">Event Description</string>
+    <string name="event_title">Event Title</string>
+    <string name="register">Register</string>
 </resources>
