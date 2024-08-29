@@ -43,6 +43,9 @@ class DetailActivity : AppCompatActivity() {
                 .load(event.mediaCover)
                 .into(binding.imgItemPhoto)
             binding.tvItemTitle.text = event?.name
+            binding.tvEventOrganizer.text = event?.ownerName
+            binding.tvEventDate.text = event?.beginTime
+            binding.tvEventQuota.text = event?.quota.toString()
             binding.tvItemDescription.text = HtmlCompat.fromHtml(event.description, HtmlCompat.FROM_HTML_MODE_LEGACY)
         }
 

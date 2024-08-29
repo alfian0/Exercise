@@ -8,4 +8,7 @@
     <string name="event_description">Event Description</string>
     <string name="event_title">Event Title</string>
     <string name="register">Register</string>
+    <string name="organizer">Penyelenggara</string>
+    <string name="date">Waktu</string>
+    <string name="quota">Quota</string>
 </resources>
